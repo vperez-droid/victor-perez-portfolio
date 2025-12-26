@@ -312,6 +312,15 @@ body {
     border-color: rgba(56, 189, 248, 0.2);
 }
 
+/* Education Grid - Full Width */
+.about-education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 48px;
+    width: 100%;
+}
+
 /* Story Section */
 .story-section {
     background: linear-gradient(to bottom, transparent, rgba(129, 140, 248, 0.05));
@@ -830,6 +839,11 @@ body {
         gap: 40px;
     }
 
+    .about-education-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     .hero {
         padding-top: 120px;
         text-align: center;
@@ -963,8 +977,8 @@ body {
 /* Floating Button */
 .roi-assistant-btn {
     position: fixed;
-    bottom: 32px;
-    right: 32px;
+    bottom: 24px;
+    right: 24px;
     background: linear-gradient(135deg, var(--accent-color), #818cf8);
     color: white;
     border: none;
@@ -980,10 +994,12 @@ body {
     transition: all 0.3s ease;
     z-index: 1000;
     overflow: hidden;
+    transform: scale(0.95);
+    transform-origin: bottom right;
 }
 
 .roi-assistant-btn:hover {
-    transform: translateY(-4px) scale(1.05);
+    transform: translateY(-4px) scale(1);
     box-shadow: 0 12px 48px rgba(56, 189, 248, 0.6);
 }
 
