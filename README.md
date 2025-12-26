@@ -1,6 +1,6 @@
-# Victor Perez Lamas - Portfolio Personal
+# Víctor Pérez Lamas - Portfolio Personal
 
-Sitio web profesional de Victor Perez Lamas, consultor especializado en automatización y transformación digital.
+Sitio web profesional de Víctor Pérez Lamas, consultor especializado en automatización y transformación digital.
 
 ## 🚀 Características
 
@@ -31,7 +31,7 @@ Este sitio está desplegado en GitHub Pages.
 
 ## 📄 Licencia
 
-© 2026 Victor Perez Lamas. Todos los derechos reservados.
+© 2026 Víctor Pérez Lamas. Todos los derechos reservados.
 
 ## 📧 Contacto
 
