@@ -255,22 +255,21 @@ body {
     overflow: hidden;
 }
 
-.story-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
+.story-grid-single {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .story-content h3 {
     font-size: 2.5rem;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
+    text-align: center;
 }
 
 .story-item {
     position: relative;
     padding-left: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 }
 
 .story-item::before {
@@ -281,6 +280,10 @@ body {
     width: 2px;
     height: 100%;
     background: var(--accent-glow);
+}
+
+.story-item:last-child {
+    margin-bottom: 0;
 }
 
 .story-item:last-child::before {
@@ -297,60 +300,8 @@ body {
 
 .story-item p {
     color: var(--text-secondary);
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     line-height: 1.8;
-}
-
-.story-highlight-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 24px;
-    padding: 48px;
-    backdrop-filter: blur(20px);
-    position: relative;
-}
-
-.story-highlight-card::after {
-    content: '23';
-    position: absolute;
-    top: -20px;
-    right: 20px;
-    font-size: 8rem;
-    font-weight: 900;
-    color: var(--accent-color);
-    opacity: 0.05;
-    pointer-events: none;
-}
-
-.highlight-stat {
-    margin-bottom: 32px;
-}
-
-.highlight-stat:last-child {
-    margin-bottom: 0;
-}
-
-.highlight-number {
-    display: block;
-    font-size: 3rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, var(--accent-color), #818cf8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 8px;
-}
-
-.highlight-description {
-    color: var(--text-primary);
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-@media (max-width: 968px) {
-    .story-grid {
-        grid-template-columns: 1fr;
-        gap: 48px;
-    }
 }
 
 /* Expertise Cards */
