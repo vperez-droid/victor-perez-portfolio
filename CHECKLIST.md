@@ -88,4 +88,4 @@
 
 **Estado actual:** ✅ LISTO PARA DESPLEGAR
 
-**Última actualización:** 26/12/2024
+**Última actualización:** 26/12/2026

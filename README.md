@@ -31,7 +31,7 @@ Este sitio está desplegado en GitHub Pages.
 
 ## 📄 Licencia
 
-© 2024 Victor Perez Lamas. Todos los derechos reservados.
+© 2026 Victor Perez Lamas. Todos los derechos reservados.
 
 ## 📧 Contacto
 
