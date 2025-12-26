@@ -333,6 +333,98 @@ body {
     line-height: 1.8;
 }
 
+/* Technical Profile Section */
+.tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.tech-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 32px;
+    transition: all 0.4s ease;
+}
+
+.tech-card:hover {
+    background: rgba(56, 189, 248, 0.05);
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+.tech-card h4 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-tag {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Featured Automations */
+.automations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.automation-item {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(129, 140, 248, 0.1));
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.automation-icon {
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.automation-text h5 {
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    font-size: 1.05rem;
+}
+
+.automation-text p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-top: 64px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
 /* Expertise Cards */
 .cards-grid {
     display: grid;
