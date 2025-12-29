@@ -349,7 +349,7 @@ body {
     content: '';
     position: absolute;
     left: 0;
-    top: 8px;
+    top: 0;
     width: 2px;
     height: 100%;
     background: var(--accent-glow);
@@ -513,7 +513,6 @@ body {
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
-    text-align: center;
 }
 
 .card:hover {
@@ -532,11 +531,13 @@ body {
     font-size: 1.25rem;
     margin-bottom: 16px;
     color: var(--text-primary);
+    text-align: center;
 }
 
 .card p {
     color: var(--text-secondary);
     font-size: 0.95rem;
+    text-align: center;
 }
 
 /* Experience Timeline */
