@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // First question answered - process name
                     conversationState.data.process = input;
                     conversationState.step = 1;
-                    addMessage(`Perfecto, veo que el proceso de <strong>"${input}"</strong> es un punto crítico. 📝`);
+                    addMessage(`Perfecto, veo que el proceso de <strong>"${input}"</strong> es un punto crítico.`);
                     setTimeout(() => {
                         addMessage('¿Aproximadamente cuántas <strong>horas a la semana</strong> dedicas a este proceso? (Ej: 10)');
                     }, 800);
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     conversationState.data.hoursPerWeek = hours;
                     conversationState.step = 2;
                     updateMetrics();
-                    addMessage(`${hours} horas semanales... eso son <strong>${(hours * 52).toFixed(0)} horas al año</strong>. 😮`);
+                    addMessage(`${hours} horas semanales... eso son <strong>${(hours * 52).toFixed(0)} horas al año</strong>.`);
                     setTimeout(() => {
                         addMessage('¿Cuál es tu <strong>coste por hora</strong> aproximado? (Ej: 30 para €30/hora)');
                     }, 1000);
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     conversationState.step = 3;
                     updateMetrics();
                     updateChart();
-                    addMessage(`Entendido. Con €${rate}/hora, estamos hablando de números importantes. 💰`);
+                    addMessage(`Entendido. Con €${rate}/hora, estamos hablando de números importantes.`);
                     setTimeout(() => {
                         addMessage('Última pregunta: ¿Cuántas <strong>personas</strong> están involucradas en este proceso? (Ej: 1, 3, 5...)');
                     }, 1000);
@@ -388,7 +388,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const analysisHTML = document.createElement('div');
         analysisHTML.innerHTML = `
-            <p>📊 <strong>Análisis completado</strong></p>
+            <p><strong>Análisis completado</strong></p>
             <p>Basándome en tus respuestas:</p>
             <ul style="margin: 12px 0; padding-left: 20px;">
                 <li>Estás invirtiendo <strong>€${annualCost.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}/año</strong> en este proceso</li>
@@ -396,7 +396,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li>El ROI estimado es del <strong>450%</strong> en 12 meses</li>
                 <li>Tiempo de implementación: <strong>4-6 semanas</strong></li>
             </ul>
-            <p>💡 <strong>¿Te gustaría que te ayude a implementar esta solución?</strong></p>
+            <p><strong>¿Te gustaría que te ayude a implementar esta solución?</strong></p>
         `;
 
         addMessage(analysisHTML);
@@ -412,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add event listeners to CTA buttons
         document.getElementById('ctaSchedule').addEventListener('click', () => {
-            addMessage('¡Perfecto! 📅 Aquí puedes agendar una auditoría gratuita de 30 minutos:', 'bot');
+            addMessage('¡Perfecto! Aquí puedes agendar una auditoría gratuita de 30 minutos:', 'bot');
             setTimeout(() => {
                 const ctaHTML = document.createElement('div');
                 ctaHTML.innerHTML = `
@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         document.getElementById('ctaProposal').addEventListener('click', () => {
-            addMessage('¡Excelente! 📧 Te enviaré una propuesta personalizada.', 'bot');
+            addMessage('¡Excelente! Te enviaré una propuesta personalizada.', 'bot');
             setTimeout(() => {
                 const emailHTML = document.createElement('div');
                 emailHTML.innerHTML = `
@@ -458,10 +458,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.getElementById('submitEmail').addEventListener('click', () => {
                         const email = document.getElementById('userEmail').value;
                         if (email && email.includes('@')) {
-                            addMessage(`✅ ¡Perfecto! Te enviaré la propuesta a <strong>${email}</strong> en las próximas horas.`, 'bot');
+                            addMessage(`Perfecto! Te enviaré la propuesta a <strong>${email}</strong> en las próximas horas.`, 'bot');
                             sendToN8N('send_proposal', { email });
                         } else {
-                            addMessage('⚠️ Por favor, introduce un email válido.', 'bot');
+                            addMessage('Por favor, introduce un email válido.', 'bot');
                         }
                     });
                 }, 100);
@@ -478,9 +478,9 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (lowerInput.includes('tiempo') || lowerInput.includes('cuanto tarda')) {
             addMessage('La implementación típica toma entre 4-6 semanas, dependiendo de la complejidad. ¿Quieres que revisemos tu caso específico?');
         } else if (lowerInput.includes('si') || lowerInput.includes('sí') || lowerInput.includes('vale') || lowerInput.includes('ok')) {
-            addMessage('¡Genial! Usa los botones de arriba para agendar una auditoría o recibir una propuesta. 🚀');
+            addMessage('¡Genial! Usa los botones de arriba para agendar una auditoría o recibir una propuesta.');
         } else {
-            addMessage('Interesante pregunta. Para darte una respuesta precisa, te recomiendo agendar una auditoría gratuita donde podemos analizar tu caso en detalle. 😊');
+            addMessage('Interesante pregunta. Para darte una respuesta precisa, te recomiendo agendar una auditoría gratuita donde podemos analizar tu caso en detalle.');
         }
     }
 
