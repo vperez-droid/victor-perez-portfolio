@@ -360,7 +360,7 @@ body {
 }
 
 .story-item:last-child::before {
-    height: 10px;
+    height: calc(100% - 20px);
 }
 
 .story-item h4 {
